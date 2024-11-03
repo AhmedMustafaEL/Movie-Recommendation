@@ -1,0 +1,96 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+} */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 30vh;
+}
+h2 {
+  text-align: left;
+  padding: 40px;
+  margin: 0;
+  margin-top: 5vh;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .movie-card {
+    width: 70%; /* shows one card per row */
+    margin-bottom: 50px;
+  }
+  .movie-info h5 {
+    font-size: 20px;
+  }
+  .details {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .movie-card {
+    width: 48%; /* Show two cards per row */
+  }
+  .movie-info h5 {
+    font-size: 18px;
+  }
+
+  .details {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .movie-card {
+    width: 32%; /* Show three cards per row */
+  }
+  .movie-info h5 {
+    font-size: 16px;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .movie-card {
+    width: 23%; /* Show four cards per row */
+  }
+  .movie-info h5 {
+    font-size: 14px;
+  }
+
+  .details {
+    font-size: 14px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .movie-card {
+    width: 11%; /* Show eight cards per row */
+  }
+  .movie-info h5 {
+    font-size: 12px;
+  }
+
+  .details {
+    font-size: 12px;
+  }
+}

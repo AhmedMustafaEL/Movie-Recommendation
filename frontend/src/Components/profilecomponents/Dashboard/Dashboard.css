@@ -1,0 +1,103 @@
+/* Dashboard.css */
+
+.dashboard {
+  padding: 2rem;
+  background-color: #f2f4f8;
+  min-height: 100vh;
+  position: relative;
+  top: 60px;
+  font-family: 'Arial', sans-serif;
+}
+
+.welcome {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.watch-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  max-width: 600px; /* Limit the width */
+  margin-left: auto;
+  margin-right: auto; /* Center the list */
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.watch-list-item {
+  background: #110909;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.watch-list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.remove-button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.remove-button:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+.add-button {
+  padding: 0.75rem 1.5rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: block;
+  margin: 0 auto; /* Center the button */
+  font-size: 1rem;
+}
+
+.add-button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .welcome {
+    font-size: 2rem;
+  }
+
+  .watch-list {
+    padding: 0 1rem; /* Add padding on smaller screens */
+  }
+}

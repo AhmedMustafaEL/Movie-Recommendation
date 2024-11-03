@@ -1,0 +1,75 @@
+/* MovieDetail.css */
+
+
+  
+  .container-m {
+    max-width: 900px;
+    margin: auto;
+    background: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffdd57;
+    text-align: center;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 80%; /* Smaller image */
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+  }
+  
+  .details {
+    text-align: center;
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    height: 600px; /* Larger height for video */
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    img {
+      width: 90%; /* Adjust image width for smaller screens */
+    }
+  
+    iframe {
+      height: 400px; /* Smaller video height for mobile */
+    }
+  }
+  
